@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무너진 도시의 프레퍼는 씨앗을 심는다</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700;900&family=Noto+Sans+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">홈</a></li>
+                <li><a href="#synopsis">작품 소개</a></li>
+                <li><a href="#character">캐릭터</a></li>
+                <li><a href="#" class="open-reader" style="color: var(--primary); font-weight: bold;">1화 미리보기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="hero-label">블랙아웃 1일 차. 문명이 멈췄다.</span>
+            <h1>무너진 도시의 프레퍼는<br>씨앗을 심는다</h1>
+            <p class="hero-sub">"전기가 끊긴 도시는 가장 거대한 사냥터다."<br>인류 최후의 녹색 요새를 향한 처절한 생존 여정</p>
+            <a href="#" class="btn-primary open-reader">1화 무료 열람하기</a>
+        </div>
+    </section>
+
+    <!-- Synopsis Section -->
+    <section id="synopsis" class="section">
+        <h2 class="section-title"><span>세계관</span> 요약</h2>
+        <div class="synopsis-grid">
+            <div class="synopsis-visual" id="canvas-container">
+                <canvas id="emp-canvas"></canvas>
+            </div>
+            <div class="synopsis-text">
+                <p><strong>전 지구적인 태양풍(EMP)</strong>으로 모든 전자기기가 멈추고 극심한 식량난이 닥친 블랙아웃 1일 차. 도심 한복판에 고립된 철저한 프레퍼(생존주의자) 한지훈이 무법지대가 된 서울을 뚫고 시골에 구축해둔 완벽한 자급자족 벙커로 귀환한다.</p>
+                <p>굶주린 약탈자들과 붕괴된 세상에 맞서, 아날로그 생존 지식과 압도적인 자원으로 <strong>인류 최후의 녹색 요새(Green Shelter)</strong>를 개척해 나가는 이야기.</p>
+                <p>문명이 재가 된 세상 위, 그는 권력 대신 <strong>종자 보관소(Seed Vault)</strong>를 열어 새로운 생태계를 틔우려 한다.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character Section -->
+    <section id="character" class="section">
+        <h2 class="section-title"><span>생존자</span> 파일</h2>
+        <div class="character-card">
+            <div class="char-title">The Prepper / 에덴의 농부</div>
+            <h3>한지훈 (Han Ji-hoon)</h3>
+            <p class="char-desc">
+                농업대 출신의 귀농 청년이자 극도의 실리주의 프레퍼. 언제 터질지 모르는 재난을 대비해 강원도 외곽에 태양광 패널(EMP 대비 완료), 빗물 정수 시설, 대규모 종자 보관소를 갖춘 요새를 미리 만들어 두었다.<br><br>
+                도심에서는 은신과 부시크래프트, 그리고 사제 무기 제작으로 위기를 돌파하고 요새 복귀 후에는 압도적인 식량과 자원을 바탕으로 철저한 '기브 앤 테이크' 원칙하에 생존자 구역을 통제하는 냉철한 리더. 하지만 마음속 깊은 곳에는 다시금 생명이 숨 쉬는 땅을 만들고자 하는 열망을 품고 있다.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 The Prepper Sows Seeds in a Fallen City. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Fullscreen Reader Modal -->
+    <div id="reader-modal" class="reader-modal">
+        <div class="reader-container">
+            <div class="reader-header">
+                <div>
+                    <h2 style="font-family: var(--font-heading); margin-bottom: 0.5rem;">[1화] 멈춰버린 세상</h2>
+                    <span style="font-size: 0.9rem; color: #888;">무너진 도시의 프레퍼는 씨앗을 심는다</span>
+                </div>
+                <div class="reader-controls">
+                    <button id="size-decrease">A-</button>
+                    <button id="size-increase">A+</button>
+                    <button class="close-btn">&times;</button>
+                </div>
+            </div>
+            
+            <div class="reader-content">
+                <p style="text-align: center; color: #888; font-size: 0.9rem;">원고를 불러오는 중입니다...</p>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <button class="btn-primary" onclick="document.querySelector('.close-btn').click();">닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
